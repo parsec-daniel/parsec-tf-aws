@@ -54,7 +54,8 @@ and cannot reimburse you for AWS resource charges.**
 1. When you're ready to go, run `terraform apply` to start deployment. After confirming correctness, this will automatically create all resources as defined in `vars.tf` and other TF files. **This will incur AWS charges.**
 2. After Terraform completes successfuly, congratulations! You should now have a fully-configured AWS environment complete with a Parsec Host and HPR.
 3. The last step is to Assign your Parsec Host in the Teams UI, and enter your `Parsec_HPR_IIP` under **App Rules** in the format of `1.2.3.4:4900`.
-4. If your Parsec host doesn't populate right away, grab a cup of coffee or a snack. It can take 10-20 minutes for the Host to get ready. The HPR, however, is ready immediately.
+
+If your Parsec host doesn't populate right away, grab a cup of coffee or a snack. It can take 10-20 minutes for the Host to get ready. The HPR, however, is ready immediately.
 
 ---
 Made in Toronto by Daniel Shiels (daniel.shiels@parsec.app)
