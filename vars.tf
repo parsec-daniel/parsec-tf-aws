@@ -50,9 +50,9 @@ variable "awsKeypair" {
 }
 
 
-// Parsec Host configuration (using AMI as of 2022-06-09)
+// Parsec Host configuration (please use the AMI Catalog to find the image in your region)
 variable "parsecHostAMI" {
-  default = "ami-0abb1e6c196a217c4"
+  default = "parsec-ami-here"
 }
 
 variable "parsecHostType" {
