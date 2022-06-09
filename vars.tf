@@ -36,6 +36,7 @@ variable "parsecTeamsConfig" {
 
 
 // HPR AMI configuration (please visit https://cloud-images.ubuntu.com/locator/ec2/ to find your AMI)
+// amd64 images ONLY
 variable "parsecRelayAMI" {
   default = "ubuntu-ami-here"
 }
