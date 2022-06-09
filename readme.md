@@ -19,7 +19,7 @@
  - Install additional software
  - Configure your HPR in the Teams UI
  - Make a grilled cheese
- - Port *Paper Mario: The Thousand Year Door* to Nintento Switch
+ - Port *Paper Mario: The Thousand Year Door* to Nintendo Switch
 
 Please use the `vars.tf` file to configure this Terraform template.
 Editing the other TF files is not reccomended, but can be done.
