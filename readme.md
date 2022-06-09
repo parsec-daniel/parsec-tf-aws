@@ -41,8 +41,7 @@ and cannot reimburse you for AWS resource charges.**
 3. Pick your region and zone.
 4. [Create your Teams configuration string by following our docs.](https://support.parsec.app/hc/en-us/articles/4408962860813-AWS-Marketplace-Listing-Usage-Instructions)
 5. [Generate a Keypair in AWS EC2.](https://docs.aws.amazon.com/ground-station/latest/ug/create-ec2-ssh-key-pair.html)
-6. [Find the Ubuntu AMI most appropriate for your region.](https://cloud-images.ubuntu.com/locator/ec2/)
-7. Fill-in the gathered information within the `vars.tf` file.
+6. Fill-in the gathered information within the `vars.tf` file.
 
 #### Getting Terraform Ready
 1. Using a terminal emulator, `cd` to the working directory `parsec-tf-aws`.
