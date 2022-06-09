@@ -51,9 +51,14 @@ variable "awsKeypair" {
 }
 
 
-// Parsec Host configuration (please use the AMI Catalog to find the image in your region)
-variable "parsecHostAMI" {
-  default = "parsec-ami-here"
+// Parsec Host configuration (AMI will be automatically selected for your region)
+data "aws_ami" "parsecHostAMI" {
+  most_recent = true
+  owners = ["679593333241"]
+  filter {
+    name = "name"
+    values = ["Parsec for Teams G4dn*"]
+  }
 }
 
 variable "parsecHostType" {
