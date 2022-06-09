@@ -52,6 +52,7 @@ variable "awsKeypair" {
 
 
 // Parsec Host configuration (AMI will be automatically selected for your region)
+// Use "Parsec for Teams G4dn*" for NVIDIA and "Parsec for Teams G4ad*" for AMD
 data "aws_ami" "parsecHostAMI" {
   most_recent = true
   owners = ["679593333241"]
@@ -60,11 +61,11 @@ data "aws_ami" "parsecHostAMI" {
     values = ["Parsec for Teams G4dn*"]
   }
 }
-
+// Change instance type, if desired. "g4dn" for NVIDIA, "g4ad" for AMD.
 variable "parsecHostType" {
   default = "g4dn.xlarge"
 }
-
+// Change disk size, if desired.
 variable "parsecHostDisk" {
   default = "256"
 }
