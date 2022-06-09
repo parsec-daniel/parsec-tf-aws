@@ -1,6 +1,6 @@
 // Parsec host definition
 resource "aws_instance" "parsec-tf-host1" {
-    ami = "${var.parsecHostAMI}"
+    ami = "${data.aws_ami.parsecHostAMI.id}"
     instance_type = "${var.parsecHostType}"
 
     // Host disk size
