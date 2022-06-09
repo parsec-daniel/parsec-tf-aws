@@ -1,4 +1,4 @@
-# Welcome to the Parsec AWS Terraform template!
+# Welcome to the Parsec AWS Terraform Template
 
 ### This package is designed to fully build a Parsec deployment for you in a matter of minutes.
 
