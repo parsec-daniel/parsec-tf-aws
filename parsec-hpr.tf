@@ -1,6 +1,6 @@
 // Parsec hpr definition
 resource "aws_instance" "parsec-tf-hpr1" {
-    ami = "${var.parsecRelayAMI}"
+    ami = "${data.aws_ami.parsecRelayAMI.id}"
     instance_type = "${var.parsecRelayType}"
 
     // VPC

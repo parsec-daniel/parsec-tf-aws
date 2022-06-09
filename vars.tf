@@ -35,12 +35,16 @@ variable "parsecTeamsConfig" {
 }
 
 
-// HPR AMI configuration (please visit https://cloud-images.ubuntu.com/locator/ec2/ to find your AMI)
-// amd64 images ONLY
-variable "parsecRelayAMI" {
-  default = "ubuntu-ami-here"
+// HPR AMI configuration (AMI will be automatically selected for your region)
+data "aws_ami" "parsecRelayAMI" {
+  most_recent = true
+  owners = ["099720109477"]
+  filter {
+    name = "name"
+    values = ["ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server*"]
+  }
 }
-
+// Change instance type, if desired.
 variable "parsecRelayType" {
   default = "t2.medium"
 }
