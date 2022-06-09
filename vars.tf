@@ -29,10 +29,22 @@ variable "awsZone" {
 }
 
 
+//AWS Keypair information
+// Please see here: https://docs.aws.amazon.com/ground-station/latest/ug/create-ec2-ssh-key-pair.html
+variable "awsKeypair" {
+  default = "your-keypair-name-here"
+}
+
+
 // Parsec Teams config (from https://support.parsec.app/hc/en-us/articles/4408962860813-AWS-Marketplace-Listing-Usage-Instructions)
 variable "parsecTeamsConfig" {
   default = "your-team-string-here"
 }
+
+
+/*
+##### Below is optional configuration, the default values will work as-is. #####
+*/
 
 
 // HPR AMI configuration (AMI will be automatically selected for your region)
@@ -47,11 +59,6 @@ data "aws_ami" "parsecRelayAMI" {
 // Change instance type, if desired.
 variable "parsecRelayType" {
   default = "t2.medium"
-}
-// Please see here: https://docs.aws.amazon.com/ground-station/latest/ug/create-ec2-ssh-key-pair.html
-// Add the exact name of your keypair here.
-variable "awsKeypair" {
-  default = "your-keypair-name-here"
 }
 
 
