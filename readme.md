@@ -91,8 +91,8 @@ If the above are true, try these steps:
     ● parsechpr.service - Parsec High Performance Relay
      Loaded: loaded (/etc/systemd/system/parsechpr.service; enabled; vendor preset: enabled)
      Active: active (running) since Thu 2022-06-02 00:37:08 UTC; 1 months 5 days ago
-   Main PID: 665 (parsechpr)
-      Tasks: 1 (limit: 4610)
+     Main PID: 665 (parsechpr)
+     Tasks: 1 (limit: 4610)
      Memory: 1.8M
      CGroup: /system.slice/parsechpr.service
              └─665 /bin/parsechpr x.x.x.x 5000 4900
