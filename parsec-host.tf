@@ -21,4 +21,9 @@ resource "aws_instance" "parsec-tf-host1" {
     // Parsec configuration options
     user_data =  "${var.parsecTeamsConfig}"
 
+    // EC2 Name
+    tags {
+      Name = "${var.hostAwsName}"
+    }
+
 }

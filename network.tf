@@ -24,12 +24,10 @@ resource "aws_nat_gateway" "parsec-tf-natgw" {
 // AWS public route table
 resource "aws_route_table" "parsec-tf-public-crt" {
     vpc_id = "${aws_vpc.parsec-tf-vpc.id}"
-
     route {
         cidr_block = "0.0.0.0/0"
         gateway_id = "${aws_internet_gateway.parsec-tf-igw.id}"
     }
-
     tags = {
         Name = "parsec-tf-public-crt"
     }

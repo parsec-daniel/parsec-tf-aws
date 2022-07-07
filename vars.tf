@@ -9,7 +9,7 @@ _____ _____ ____  ____      _    _____ ___  ____  __  __
  | | |  _| | |_) | |_) |  / _ \ | |_ | | | | |_) | |\/| |
  | | | |___|  _ <|  _ <  / ___ \|  _|| |_| |  _ <| |  | |
  |_| |_____|_| \_\_| \_\/_/   \_\_|   \___/|_| \_\_|  |_|
-                      
+
 Welcome to the Parsec AWS Terraform template!
 Please see readme.md for information on how to use this template.
 */
@@ -51,6 +51,15 @@ variable "parsecTeamsConfig" {
 ##### Below is optional configuration, the default values will work as-is. #####
 */
 
+
+// EC2 Instance Names
+variable "hprAwsName" {
+  default = "parsec-tf-hpr1"
+}
+
+variable "hostAwsName" {
+  default = "parsec-tf-host1"
+}
 
 // HPR AMI configuration (AMI will be automatically selected for your region)
 data "aws_ami" "parsecRelayAMI" {

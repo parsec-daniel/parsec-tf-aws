@@ -15,6 +15,11 @@ resource "aws_instance" "parsec-tf-hpr1" {
     // Parsec hpr install
     user_data = "${file("parsechpr_bootstrap.sh")}"
 
+    // EC2 Name
+    tags = {
+      Name = "${var.hprAwsName}"
+    }
+
 }
 
 //output EIP and IIP
