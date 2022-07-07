@@ -22,7 +22,7 @@ resource "aws_instance" "parsec-tf-host1" {
     user_data =  "${var.parsecTeamsConfig}"
 
     // EC2 Name
-    tags {
+    tags = {
       Name = "${var.hostAwsName}"
     }
 
