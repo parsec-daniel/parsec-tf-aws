@@ -2,6 +2,8 @@
 
 ### This package is designed to fully build a Parsec deployment for you in a matter of minutes.
 
+## ⚠️ We are aware of a VDD auto-install issue with the AMI. For now, you will need to manually install the VDD after the host boots.
+
 #### What this template *will* do:
  - Create an AWS VPC
  - Create two subnets: Public and Private
