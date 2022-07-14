@@ -44,6 +44,7 @@ and cannot reimburse you for AWS resource charges.**
 4. [Create your Teams configuration string by following our docs.](https://support.parsec.app/hc/en-us/articles/4408962860813-AWS-Marketplace-Listing-Usage-Instructions)
 5. [Generate a Keypair in AWS EC2.](https://docs.aws.amazon.com/ground-station/latest/ug/create-ec2-ssh-key-pair.html) **Save this key! You'll need it to decrypt the Windows password.**
 6. Fill-in the gathered information within the `vars.tf` file.
+7. Add the Parsec HPR download URL to `parsechpr_bootstrap.sh`. **This can be found in your Teams Admin Panel under App Rules.**
 
 #### Adding the ~Ingredients~ Variables to `vars.tf`
 There are **six** required variables within the `vars.tf` file.
